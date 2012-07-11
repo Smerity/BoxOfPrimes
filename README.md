@@ -11,7 +11,10 @@ _Fast pseudo-random prime number generator for n bits using the OpenSSL library_
 Installation
 ------------
 
-```java
+The `libssl-dev` library must be installed on your system and you must then compile BoxOfPrimes with `make`.
+For Ubuntu, this translates to the steps below.
+
+```
 sudo apt-get install libssl-dev
 make
 ```
@@ -28,7 +31,7 @@ Generated prime: 302309671159424334872530075812875286599
 Important Notes
 ---------------
 
-+ I make no claims as to the cryptographic strength of the generated primes -- it was used for a Computer & Network Security competition (wargames) where one of the challenges was to factor progressively larger and larger primes
++ I make no claims as to the cryptographic strength of the generated primes
 + The prime number generation has a negligible error probability (false positive rate of ~2^-80) -- see [BN_generate_prime](http://www.openssl.org/docs/crypto/BN_generate_prime.html) in the OpenSSL documentation.
 + The OpenSSL library was meant for large primes and primes smaller than 16 bits will not be random
 + Released under [WTFPL](http://en.wikipedia.org/wiki/WTFPL)
