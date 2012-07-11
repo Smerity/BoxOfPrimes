@@ -11,18 +11,18 @@ _Fast pseudo-random prime number generator for n bits using the OpenSSL library_
 Installation
 ------------
 
-    :bash
-    sudo apt-get install libssl-dev
-    make
+```bash
+sudo apt-get install libssl-dev
+make
+```
 
 Example Use
 -----------
 
-    :bash
-    smerity@forsay:~/Coding/boxofprimes$ ./boxofprimes 512
-    Generating prime of 512 bits
-    Generated prime: 10977138580735980852975270817932891900942175365090267460961435893872327044940484227287667381545666501936204753302862942508205061662148152070044798709400653
-
+```bash
+Generating prime of 128 bits
+Generated prime: 302309671159424334872530075812875286599
+```
 
 Important Notes
 ---------------
@@ -31,4 +31,4 @@ Important Notes
 + The prime number generation has a negligible error probability (false positive rate of ~2^-80) -- see [BN_generate_prime](http://www.openssl.org/docs/crypto/BN_generate_prime.html) in the OpenSSL documentation.
 + The OpenSSL library was meant for large primes and primes smaller than 16 bits will not be random
 + Released under [WTFPL](http://en.wikipedia.org/wiki/WTFPL)
-+ If you discover a prime number such that p % 2 == 0 using this software you must name it a Smeritorious prime
++ If you discover a prime number such that p % 2 == 0 using this software you must name it a [Smeritorious prime](http://www.smerity.com)
