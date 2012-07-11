@@ -11,7 +11,7 @@ _Fast pseudo-random prime number generator for n bits using the OpenSSL library_
 Installation
 ------------
 
-```bash
+```java
 sudo apt-get install libssl-dev
 make
 ```
@@ -19,7 +19,8 @@ make
 Example Use
 -----------
 
-```bash
+```java
+smerity@forsay:~/Coding/boxofprimes$ ./boxofprimes 128
 Generating prime of 128 bits
 Generated prime: 302309671159424334872530075812875286599
 ```
